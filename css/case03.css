@@ -1,0 +1,45 @@
+  .box {
+      width: 120px;
+      height: 60px;
+      background-color: blue;
+      border-radius: 12px;
+      position: absolute;
+      animation: inframe 7s linear infinite alternate 0s;
+  }
+
+  @keyframes inframe {
+      0% {
+          top: 0;
+          left: 0;
+          ransform: rotate(180deg);
+
+      }
+
+      25% {
+          top: 0;
+          left: calc(100% - 200px);
+          background-color: yellow;
+          transform: rotate(360deg);
+      }
+
+      50% {
+          top: calc(100% - 90px);
+          left: calc(100% - 120px);
+          transform: rotate(-360deg);
+          background-color: orangered;
+
+      }
+
+      75% {
+          top: calc(100% - 80px);
+          left: 0;
+          background-color: rgb(235, 36, 69);
+      }
+
+      100% {
+          top: 0;
+          left: 0;
+          transform: rotate(360deg);
+
+      }
+  }
